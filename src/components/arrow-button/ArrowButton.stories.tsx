@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react';
 
-import { ArrowButton } from './ArrowButton';
+import { ArrowButton, OnClick } from './ArrowButton';
 
 const meta: Meta<typeof ArrowButton> = {
 	component: ArrowButton,
@@ -11,9 +11,12 @@ type Story = StoryObj<typeof ArrowButton>;
 
 export const ArrowButtonStory: Story = {
 	render: () => {
+		const handleClick: OnClick = () => {
+			console.log('Button clicked');
+		};
 		return (
 			<>
-				<ArrowButton />
+				<ArrowButton isOpen={false} onClick={handleClick} />
 			</>
 		);
 	},
