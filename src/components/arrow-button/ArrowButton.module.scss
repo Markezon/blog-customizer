@@ -1,19 +1,22 @@
 .container {
+	border: none;
+	padding: 0;
+	background: none;
+	cursor: pointer;
+	box-sizing: border-box;
 	position: fixed;
 	top: 31px;
 	display: flex;
-	flex-shrink: 0;
-	justify-content: center;
-	align-items: center;
-	box-sizing: border-box;
 	width: 100px;
 	height: 100px;
-	background-color: #000000;
-	border-right: 1px;
-	transition: transform 0.5s ease;
+	justify-content: center;
+	align-items: center;
+	flex-shrink: 0;
+	background-color: #000;
+	transition: transform 0.5s ease, background-color 0.3s ease;
 }
 
-.container_open {
+.containerOpen {
 	transform: translate(616px);
 }
 
@@ -25,6 +28,16 @@
 	transition: transform 0.5s ease;
 }
 
-.arrow_open {
+.arrowOpen {
 	transform: rotate(0deg);
+}
+
+.container:hover,
+.container:focus-visible {
+	background-color: #ffc802;
+	outline: none;
+}
+
+.container:active {
+	background-color: #787878;
 }
