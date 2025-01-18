@@ -1,6 +1,6 @@
 # Project Work: "blog-customizer"
 
-## The project can be viewed by following the [link]([https://customizer.khudorenko.com/](https://customizer.khudorenko.com/))
+## The project can be viewed by following the [link](https://ube.khudorenko.com/)
 
 ### A single-page website with a customizable page via an expandable settings panel.
 
