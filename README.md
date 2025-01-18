@@ -1,54 +1,30 @@
-# Проектная работа: Вёрстка проекта
+# Project Work: "blog-customizer"
 
-## Шаг первый. Изучаем имеющиеся компоненты
+## The project can be viewed by following the [link]([https://customizer.khudorenko.com/](https://customizer.khudorenko.com/))
 
-[Макет проекта](https://www.figma.com/file/FEeiiGLOsE7ktXbPpBxYoD/Custom-dropdown?type=design&node-id=0%3A1&mode=design&t=eXRJnWC6Xsuw0qR4-1)
+### A single-page website with a customizable page via an expandable settings panel.
 
-Для запуска Storybook выполните:
+#### **Technologies Used:**
 
-```
-npm run storybook
-```
+-  **HTML**
 
-Для запуска линтера для стилей выполните:
+-  **CSS**
 
-```
-npm run stylelint
-```
+-  **TypeScript**
 
-Для запуска линтера выполните:
+-  **JavaScript**
 
-```
-npm run lint
-```
+-  **React**
 
-Для запуска форматтера выполните:
+-  **StoryBook**
 
-```
-npm run format
-```
+-  **Webpack**
 
-### Функциональные требования
+#### **Available Features:**
 
-- При нажатии на «стрелку» открывается сайдбар с настройками, при повторном нажатии или клике вне сайдбар закрывается.
-- При изменении настроек в сайдбаре они не применяются сразу.
-- После нажатия на «применить» стили применяются к статье.
-- При нажатии «сбросить» настройки в форме сбрасываются на начальные, которые были при открытии страницы, и стили применяются к статье.
-- Настройки устанавливаются через CSS-переменные, которые уже есть в стилях и установлены в коде в дефолтные значения.
-
-## Шаг второй. Реализация формы
-
-Продумайте следующие моменты, прежде чем приступать к коду: 
-
-- как будет организована композиция,
-- где вы будете хранить состояние,
-- как передавать данные между формой и страницей.
-
-Затем реализуйте механику открытия-закрытия панели с формой, после этого можно будет временно зафиксировать ее пропсом для удобства реализации.
-
-После этого реализуйте форму из имеющихся компонент согласно макету.
-
-
-## Шаг третий. Обеспечьте передачу данных между формой и страницей
-
-Реализуйте по отдельности сохранение состояния страницы и состояние формы. Обеспечьте применение нового состояния после нажатия на «применить».
+-   Clicking the "arrow" button opens a sidebar with settings; clicking it again or outside the sidebar closes it.
+-   Changes made in the sidebar settings are not applied immediately.
+-   After clicking "Apply," the styles are applied to the page content.
+-   Clicking "Reset" reverts the settings in the form to their initial state (as they were when the page was opened) and applies the styles to the page content.
+-   Settings are implemented using CSS variables.
+-   When reopening the sidebar, the previously selected settings are retained.
